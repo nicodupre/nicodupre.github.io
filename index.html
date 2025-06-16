@@ -1,50 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dupré</title>
-  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Satoshi', sans-serif;
-      background: linear-gradient(to right, #f7f7f7, #e6ecf0);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 2rem;
-    }
-    .container {
-      max-width: 600px;
-      background: white;
-      padding: 3rem;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #000;
-      font-weight: 300;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.1rem;
-      color: #888;
-      font-weight: 300;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dupré</title>
+    <link rel="preconnect" href="https://api.fontshare.com" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700,900&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Satoshi', sans-serif;
+        background-color: #fff;
+        color: #111;
+        line-height: 1.6;
+        padding: 2rem;
+        max-width: 800px;
+        margin-inline: auto;
+      }
+
+      h1 {
+        font-weight: 900;
+        font-style: italic;
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p.intro {
+        color: #777;
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      }
+
+      .projects {
+        margin-bottom: 3rem;
+      }
+
+      .project {
+        margin-bottom: 2rem;
+      }
+
+      .project img {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      footer {
+        font-size: 0.9rem;
+        color: #777;
+        text-align: center;
+        margin-top: 4rem;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid #ccc;
+      }
+
+      a:hover {
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
     <h1>dupré</h1>
-    <p>este sitio está en construcción. muy pronto vas a encontrar algo increíble acá.</p>
-  </div>
-</body>
+    <p class="intro">Diseñador visual con foco en identidad, dirección de arte y experimentación digital. Basado en Uruguay.</p>
+
+    <section class="projects">
+      <div class="project">
+        <h2>Proyecto 1</h2>
+        <img src="https://via.placeholder.com/800x450" alt="Proyecto 1" />
+        <p>Descripción breve del proyecto, el cliente o la idea detrás.</p>
+      </div>
+      <div class="project">
+        <h2>Proyecto 2</h2>
+        <img src="https://via.placeholder.com/800x450" alt="Proyecto 2" />
+        <p>Descripción breve del proyecto, lo que hiciste y qué lo hace especial.</p>
+      </div>
+      <div class="project">
+        <h2>Proyecto 3</h2>
+        <img src="https://via.placeholder.com/800x450" alt="Proyecto 3" />
+        <p>Podés linkear a un Behance, Instagram o PDF si querés mostrar más.</p>
+      </div>
+    </section>
+
+    <footer>
+      <p>
+        <a href="mailto:tuemail@ejemplo.com">Contacto</a> ·
+        <a href="https://www.instagram.com/tuperfil" target="_blank">Instagram</a> ·
+        <a href="https://www.linkedin.com/in/tuperfil" target="_blank">LinkedIn</a>
+      </p>
+    </footer>
+  </body>
 </html>
