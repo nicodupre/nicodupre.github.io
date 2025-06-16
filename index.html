@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Bienvenido a Dupré</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dupré</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
-      font-family: sans-serif;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to right, #f7f7f7, #e6ecf0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       text-align: center;
-      padding-top: 100px;
-      background-color: #f4f4f4;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      padding: 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
     }
     h1 {
-      font-size: 2.5em;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.5rem;
       color: #333;
+      margin-bottom: 1rem;
     }
     p {
-      color: #666;
+      font-size: 1.1rem;
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <h1>Hola, soy Dupré</h1>
-  <p>Sitio en construcción. Próximamente más contenido.</p>
+  <div class="container">
+    <h1>Hola, soy Dupré</h1>
+    <p>Este sitio está en construcción. Muy pronto vas a encontrar algo increíble acá.</p>
+  </div>
 </body>
 </html>
